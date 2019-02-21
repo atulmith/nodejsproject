@@ -1,0 +1,1 @@
+const mongoose = require('mongoose'); const CategorytypeSchema = new mongoose.Schema({  categorytypename: {     type: String,     required: true   },   categorytypealiasname: {     type: String,     required: true   },  createdAt: {     type: Date,     default: Date.now   } }); module.exports = mongoose.model('categorytype', CategorytypeSchema,'categorytype');
